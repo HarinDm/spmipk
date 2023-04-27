@@ -139,8 +139,8 @@ img {
 }
   
   @font-face {
-    font-family: 'NunitoSans';
-    src: url('../fonts/NunitoSans-Regular.ttf') format('truetype');
+    font-family: 'Ubuntu';
+    src: url('../fonts/Ubuntu-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
   }
@@ -162,24 +162,20 @@ button:focus {
 }
 
 a {
-    /* text-decoration: none; */
+    text-decoration: none;
     color: inherit;
   }
   
 /* ----------------------------------------------------- */
 
-/* body {
-    font-family: 'NunitoSans';
-    background-color: white;
-    font-size: 16px;
-    background-image: url(../assets/img/background.png);
-    background-repeat: no-repeat;
-    background-position-x: right;
-    background-size: 58%;
-} */
+body{
+  font-family: 'Ubuntu';
+}
 
 .header-block{
+  position: fixed;
   background-color: #F8F9FA;
+  width: 100%;
 }
 
 .wrapper {
@@ -191,6 +187,13 @@ a {
 
 .header{
   display: flex;
+  flex-wrap: wrap;
+}
+
+.header-items{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
   padding-top: 7px;
 }
 
@@ -199,7 +202,6 @@ a {
   align-items: center;
   justify-content: center;
   width: 190px;
-  margin: 0 10px;
 }
 
 .header__logo{
@@ -280,4 +282,27 @@ a {
   font-size: 24px;
   color: #001B5B;
   font-weight: bold;
+}
+
+.header-nav{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.header-nav::before{
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color:#0752FF
+}
+
+.nav__items{
+  font-size: 14px;
+  color: #001B5B;
+  text-transform: uppercase;
+  margin: 10px 0;
 }
