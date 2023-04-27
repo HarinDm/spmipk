@@ -259,6 +259,7 @@ body{
   text-transform: uppercase;
   text-align: center;
   margin: 0 15px 0 12px;
+  border: none;
 }
 
 .search__icon{
