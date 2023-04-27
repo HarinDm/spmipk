@@ -1,0 +1,186 @@
+@charset "UTF-8";
+
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+input,
+textarea,
+p,
+blockquote,
+th,
+td {
+  margin: 0;
+  padding: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+fieldset,
+img,
+abbr {
+  border: 0;
+}
+
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+strong,
+th,
+var {
+  font-style: normal;
+  font-weight: normal;
+}
+
+/* ul li {
+  list-style: none;
+} */
+
+caption,
+th {
+  text-align: left;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+sup {
+  vertical-align: text-top;
+}
+
+sub {
+  vertical-align: text-bottom;
+}
+
+input,
+textarea,
+select {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+legend {
+  color: #000;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+main {
+  display: block;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 0px;
+}
+
+::-webkit-scrollbar-button {
+  width: 0px;
+  height: 0px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+  border-radius: 50px;
+}
+
+::-webkit-scrollbar-track-piece {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #A32361;
+  border-radius: 50px;
+}
+
+::-webkit-scrollbar-corner {
+  background-color: transparent;
+}
+  
+  @font-face {
+    font-family: 'NunitoSans';
+    src: url('../fonts/NunitoSans-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  html:not([data-scroll='0']) header {
+    background: rgba(2, 2, 2, 0.4);
+    box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.1);
+    z-index: 2;
+  }
+
+a,
+button {
+  cursor: pointer;
+}
+
+a:focus,
+button:focus {
+  outline: none;
+}
+
+a {
+    /* text-decoration: none; */
+    color: inherit;
+  }
+  
+/* ----------------------------------------------------- */
+
+/* body {
+    font-family: 'NunitoSans';
+    background-color: white;
+    font-size: 16px;
+    background-image: url(../assets/img/background.png);
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-size: 58%;
+} */
+
+.wrapper {
+  max-width: calc(100% - 160px);
+  margin: 0 auto;
+  padding-left: 80px;
+  padding-right: 80px;
+}
