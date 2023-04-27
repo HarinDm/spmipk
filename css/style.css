@@ -251,6 +251,7 @@ body{
   width: 116px;
   height: 40px;
   background-color: #4E6BAD;
+  border: none;
 }
 
 .btn__name{
@@ -259,7 +260,6 @@ body{
   text-transform: uppercase;
   text-align: center;
   margin: 0 15px 0 12px;
-  border: none;
 }
 
 .search__icon{
